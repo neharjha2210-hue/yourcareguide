@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YourCareGuide | Your Health, Our Care</title>
+<style>
+:root{--blue:#176b87;--teal:#2a9d8f;--light:#eef8f8;--dark:#17324d;--white:#fff;--danger:#b42318;--shadow:0 10px 30px rgba(23,50,77,.10)}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#294052;background:#f8fcfc;line-height:1.6}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);box-shadow:0 2px 14px rgba(0,0,0,.08)}
+.nav{max-width:1150px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:25px;font-weight:800;color:var(--blue);text-decoration:none}.logo span{color:var(--teal)}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:#315166;text-decoration:none;font-size:14px;font-weight:600}nav a:hover{color:var(--teal)}
+.hero{background:linear-gradient(135deg,#e9f8f7,#eef6fb);padding:75px 22px}
+.hero-inner{max-width:1150px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:45px}
+.badge{display:inline-block;background:#d8f1ee;color:#176b63;padding:7px 13px;border-radius:30px;font-size:13px;font-weight:700}
+h1{font-size:clamp(42px,6vw,68px);line-height:1.05;margin:18px 0 10px;color:var(--dark)}
+.hero h1 span{color:var(--teal)}.tagline{font-size:21px;color:#426174;margin:0 0 24px}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700;margin:5px 6px 5px 0}
+.primary{background:var(--blue);color:white}.secondary{background:white;color:var(--blue);border:1px solid #b8d9df}
+.hero-card{background:white;border-radius:24px;padding:30px;box-shadow:var(--shadow)}
+.heart{width:95px;height:95px;border-radius:50%;background:#dff4f0;display:grid;place-items:center;font-size:44px;margin-bottom:18px}
+section{padding:65px 22px}.container{max-width:1150px;margin:auto}
+.section-title{text-align:center;margin-bottom:35px}.section-title h2{font-size:34px;color:var(--dark);margin:0 0 8px}.section-title p{max-width:680px;margin:auto;color:#607786}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;padding:25px;border-radius:18px;box-shadow:var(--shadow);border:1px solid #e5eeee}.icon{font-size:30px}.card h3{color:var(--dark);margin:10px 0 6px}
+.alt{background:#eef8f8}
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.step{background:white;border-radius:16px;padding:22px;display:flex;gap:16px;box-shadow:0 5px 18px rgba(0,0,0,.06)}.num{min-width:38px;height:38px;border-radius:50%;background:#d8f1ee;color:#176b63;display:grid;place-items:center;font-weight:800}
+.warning{background:#fff4f2;border-left:6px solid #d92d20;padding:22px;border-radius:12px}.warning h3{color:var(--danger);margin-top:0}
+.checklist{max-width:800px;margin:auto;background:white;border-radius:18px;padding:25px;box-shadow:var(--shadow)}.check{padding:13px;border-bottom:1px solid #edf1f2}.check:last-child{border:0}.check input{margin-right:12px;transform:scale(1.2)}
+.progress{height:10px;background:#e8eeee;border-radius:20px;overflow:hidden;margin:18px 0}.bar{height:100%;width:0;background:var(--teal);transition:.3s}
+details{background:white;margin:10px 0;padding:17px 20px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.05)}summary{cursor:pointer;font-weight:700;color:var(--dark)}
+footer{background:#17324d;color:white;padding:38px 22px;text-align:center}footer p{margin:6px}
+.disclaimer{font-size:13px;color:#d5e2e8;max-width:850px;margin:15px auto}
+@media(max-width:800px){.hero-inner,.cards,.steps{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}nav{gap:10px}.hero{padding:50px 20px}section{padding:48px 18px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="nav">
+<a class="logo" href="#home">Your<span>Care</span>Guide</a>
+<nav>
+<a href="#home">Home</a><a href="#before">Before You Leave</a><a href="#care">Care at Home</a>
+<a href="#medicines">Medicines</a><a href="#warning">Warning Signs</a><a href="#caregiver">Caregiver</a><a href="#checklist">Checklist</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-inner">
+<div>
+<span class="badge">POST-DISCHARGE CARE GUIDE</span>
+<h1>YourCare<span>Guide</span></h1>
+<p class="tagline"><strong>Your health, our care.</strong><br>Simple guidance for a safer and more organized recovery at home.</p>
+<a class="btn primary" href="#checklist">Start My Recovery</a>
+<a class="btn secondary" href="#care">Explore Care Guide</a>
+</div>
+<div class="hero-card">
+<div class="heart">♥</div>
+<h2>Recovery continues at home</h2>
+<p>Leaving the hospital is an important step. Following your discharge instructions, taking medicines correctly, attending follow-ups and knowing when to seek help can support a smoother recovery.</p>
+</div>
+</div>
+</section>
+
+<section id="before">
+<div class="container">
+<div class="section-title"><h2>Before You Leave the Hospital</h2><p>Make sure you and your caregiver understand the discharge plan.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">📄</div><h3>Understand your instructions</h3><p>Know your diagnosis, treatment plan, activity restrictions, diet instructions and what symptoms should be reported.</p></div>
+<div class="card"><div class="icon">💊</div><h3>Review your medicines</h3><p>Confirm each medicine, its purpose, dose, timing and duration. Ask what to do if you miss a dose.</p></div>
+<div class="card"><div class="icon">📅</div><h3>Plan follow-up care</h3><p>Keep your appointment details and know which healthcare professional or department to contact with questions.</p></div>
+</div>
+</div>
+</section>
+
+<section class="alt" id="care">
+<div class="container">
+<div class="section-title"><h2>Care at Home</h2><p>Every patient's recovery is different. Follow your own discharge instructions first.</p></div>
+<div class="steps">
+<div class="step"><div class="num">1</div><div><h3>Rest & sleep</h3><p>Allow your body time to recover. Maintain a comfortable sleep routine and avoid activities your healthcare professional has restricted.</p></div></div>
+<div class="step"><div class="num">2</div><div><h3>Food & hydration</h3><p>Follow the recommended diet. Drink fluids according to your medical instructions, especially if you have fluid restrictions.</p></div></div>
+<div class="step"><div class="num">3</div><div><h3>Personal & wound care</h3><p>Keep yourself and any wound or incision clean and cared for exactly as instructed. Do not apply unapproved products.</p></div></div>
+<div class="step"><div class="num">4</div><div><h3>Activity</h3><p>Return to activity gradually and only within the limits given at discharge. Ask before restarting strenuous exercise or driving.</p></div></div>
+</div>
+</div>
+</section>
+
+<section id="medicines">
+<div class="container">
+<div class="section-title"><h2>Medication Safety</h2><p>A simple routine can help prevent missed doses and confusion.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🕐</div><h3>Follow the schedule</h3><p>Take medicines exactly as prescribed. Do not change the dose or stop a prescribed medicine without professional advice.</p></div>
+<div class="card"><div class="icon">📝</div><h3>Keep a medicine list</h3><p>Record the medicine name, dose and timing. Keep the list available for appointments and emergencies.</p></div>
+<div class="card"><div class="icon">⚠️</div><h3>Ask before adding medicines</h3><p>Check with a healthcare professional before taking new OTC medicines, supplements or herbal products.</p></div>
+</div>
+</div>
+</section>
+
+<section id="warning" class="alt">
+<div class="container">
+<div class="section-title"><h2>Know the Warning Signs</h2><p>Do not ignore a serious or rapidly worsening change in your condition.</p></div>
+<div class="warning">
+<h3>🚨 Seek prompt medical help when appropriate</h3>
+<p>Depending on the patient's condition, concerning symptoms may include difficulty breathing, chest pain, fainting, severe or rapidly worsening pain, persistent vomiting, significant confusion or weakness, high/persistent fever, or concerning changes around a wound such as increasing redness, swelling or drainage.</p>
+<p><strong>If symptoms are severe or life-threatening, contact your local emergency service immediately.</strong> Do not use this website to diagnose an emergency.</p>
+</div>
+</div>
+</section>
+
+<section id="caregiver">
+<div class="container">
+<div class="section-title"><h2>Caregiver Guide</h2><p>Family members and caregivers can help make recovery more organized and safe.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">👨‍👩‍👧</div><h3>Support daily needs</h3><p>Help with meals, appointments, medicines and daily activities when the patient needs assistance.</p></div>
+<div class="card"><div class="icon">👀</div><h3>Observe changes</h3><p>Pay attention to new or worsening symptoms and communicate concerns to the healthcare team.</p></div>
+<div class="card"><div class="icon">🤝</div><h3>Communicate</h3><p>Keep discharge papers accessible and write down questions or symptoms to discuss at follow-up visits.</p></div>
+</div>
+</div>
+</section>
+
+<section id="checklist" class="alt">
+<div class="container">
+<div class="section-title"><h2>Daily Recovery Checklist</h2><p>Tick off what you have completed today.</p></div>
+<div class="checklist">
+<div class="progress"><div class="bar" id="bar"></div></div>
+<p id="progressText"><strong>0%</strong> completed</p>
+<label class="check"><input type="checkbox"> I followed my prescribed medicine schedule.</label>
+<label class="check"><input type="checkbox"> I followed my recommended food and hydration plan.</label>
+<label class="check"><input type="checkbox"> I completed only the activity allowed in my discharge plan.</label>
+<label class="check"><input type="checkbox"> I got enough rest.</label>
+<label class="check"><input type="checkbox"> I completed wound/personal care as instructed.</label>
+<label class="check"><input type="checkbox"> I checked for new or worsening symptoms.</label>
+<label class="check"><input type="checkbox"> I know my next follow-up appointment.</label>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-title"><h2>Frequently Asked Questions</h2></div>
+<details><summary>Can I follow general advice instead of my discharge instructions?</summary><p>No. Your individual discharge instructions are more important because they are based on your condition and treatment.</p></details>
+<details><summary>What should I do if I am unsure about a medicine?</summary><p>Do not guess. Contact your healthcare professional or pharmacist and keep your discharge/medication list available.</p></details>
+<details><summary>When should I attend follow-up?</summary><p>Attend the date and time provided in your discharge plan. If you are unsure, contact the hospital or healthcare professional who arranged your follow-up.</p></details>
+<details><summary>Can YourCareGuide diagnose my symptoms?</summary><p>No. YourCareGuide is an educational project and cannot replace professional medical assessment or personalized medical advice.</p></details>
+</div>
+</section>
+</main>
+
+<footer>
+<h2>YourCareGuide</h2>
+<p><strong>Your health, our care.</strong></p>
+<p class="disclaimer">Educational information only. This website is not a substitute for a doctor's advice, discharge instructions, diagnosis or emergency medical care.</p>
+<p>© 2026 YourCareGuide | CEP Project</p>
+</footer>
+
+<script>
+const boxes=[...document.querySelectorAll('.check input')],bar=document.getElementById('bar'),text=document.getElementById('progressText');
+function update(){const done=boxes.filter(b=>b.checked).length;const pct=Math.round(done/boxes.length*100);bar.style.width=pct+'%';text.innerHTML='<strong>'+pct+'%</strong> completed';}
+boxes.forEach(b=>b.addEventListener('change',update));
+</script>
+</body>
+</html>
